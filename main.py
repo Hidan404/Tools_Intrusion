@@ -5,6 +5,7 @@ import info_coletor
 import Scanner
 import bruteforce_login
 import http_cabecalho
+import forca_bruta_diretorios
 
 
 def menu():
@@ -13,6 +14,9 @@ def menu():
     console.print("[bold green]1. Coletar informações de domínio[/bold green]")
     console.print("[bold green]2. Scanner de portas[/bold green]")
     console.print("[bold green]3. Brute force em diretórios[/bold green]")
+    console.print("[bold green]4. Conferir cabeçalho HTTP[/bold green]")
+    console.print("[bold green]5. Força bruta de Diretorios[/bold green]")
+    console.print("[bold green]6. Sair[/bold green]")
 
     while True:
         
@@ -22,16 +26,23 @@ def menu():
             opcao = int(console.input("[bold blue]Digite sua opção: [/bold blue]"))
             if opcao == 1:
                 console.print("[bold green]Coletar informações de domínio selecionado.[/bold green]")
-                info_coletor.coletar_informacoes_dominio("https://www.linkedin.com/feed/")  # Substitua pelo domínio desejado
+                dominio = info_coletor.entrada_dominio()
+                info_coletor.coletar_informacoes_dominio(dominio)  # Substitua pelo domínio desejado
             elif opcao == 2:
                 console.print("[bold green]Scanner de portas selecionado.[/bold green]")
-                Scanner.Scanner_portas("13.107.42.14", [80, 443])  
+                Scanner.main()
             elif opcao == 3:
                 console.print("[bold green]Brute force em diretórios selecionado.[/bold green]")
-                bruteforce_login.bruteforce_login("https://www.linkedin.com/feed/", "usuario", "senha")  
+                forca_bruta_diretorios.forca_bruta_diretorios("https://www.linkedin.com/feed/", "usuario", "senha")
             elif opcao == 4:
                 console.print("[bold red]conferindo  http cabeçalho[/bold red]")
                 http_cabecalho.mostraar_cabecalho("https://www.linkedin.com/feed/")
+            elif opcao == 5:
+                console.print("[bold green]Força bruta de Diretórios selecionado.[/bold green]")
+                bruteforce_login.main()
+            elif opcao == 6:
+                console.print("[bold red]Saindo...[/bold red]")
+                break
             else:
                 console.print("[bold red]Opção inválida. Tente novamente.[/bold red]")
                 continue
