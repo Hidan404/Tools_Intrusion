@@ -138,7 +138,7 @@ def admin_exploit(url):
 
 # ========== EXECUÇÃO PRINCIPAL ==========
 
-if __name__ == "__main__":
+def main():
     print("==== 💣 BLACKHAT BOMBER v2.0 ====\n")
 
     alvo = input("URL alvo (ex: http://site.com): ").strip()
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     usar_robots = input("Usar robots.txt? (s/n): ").strip().lower() == 's'
     usar_spider = input("Fazer spider? (s/n): ").strip().lower() == 's'
     usar_exploit = input("Ativar exploit automático de /admin? (s/n): ").strip().lower() == 's'
-    wordlist_path = input("Caminho da wordlist (ex: wordlist.txt): ").strip()
+    wordlist_path = "common.txt"
 
     wordlist = carregar_wordlist(wordlist_path)
     extra_robots = extrair_robots_txt(alvo) if usar_robots else []

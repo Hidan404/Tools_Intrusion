@@ -33,7 +33,7 @@ def menu():
                 Scanner.main()
             elif opcao == 3:
                 console.print("[bold green]Brute force em diretórios selecionado.[/bold green]")
-                forca_bruta_diretorios.forca_bruta_diretorios("https://www.linkedin.com/feed/", "usuario", "senha")
+                forca_bruta_diretorios.main()
             elif opcao == 4:
                 console.print("[bold red]conferindo  http cabeçalho[/bold red]")
                 http_cabecalho.mostraar_cabecalho("https://www.linkedin.com/feed/")
