@@ -8,6 +8,8 @@ import http_cabecalho
 import forca_bruta_diretorios
 
 
+
+
 def menu():
     console = Console()
     console.print("[bold blue][*] Ferramentas de teste de Intrusão[/bold blue]")
@@ -27,19 +29,24 @@ def menu():
             if opcao == 1:
                 console.print("[bold green]Coletar informações de domínio selecionado.[/bold green]")
                 dominio = info_coletor.entrada_dominio()
-                info_coletor.coletar_informacoes_dominio(dominio)  # Substitua pelo domínio desejado
+                info_coletor.coletar_informacoes_dominio(dominio) 
+                menu()
             elif opcao == 2:
                 console.print("[bold green]Scanner de portas selecionado.[/bold green]")
                 Scanner.main()
+                menu()
             elif opcao == 3:
                 console.print("[bold green]Brute force em diretórios selecionado.[/bold green]")
                 forca_bruta_diretorios.main()
+                menu()
             elif opcao == 4:
                 console.print("[bold red]conferindo  http cabeçalho[/bold red]")
-                http_cabecalho.mostraar_cabecalho("https://www.linkedin.com/feed/")
+                http_cabecalho.main()
+                menu()
             elif opcao == 5:
                 console.print("[bold green]Força bruta de Diretórios selecionado.[/bold green]")
                 bruteforce_login.main()
+                menu()
             elif opcao == 6:
                 console.print("[bold red]Saindo...[/bold red]")
                 break

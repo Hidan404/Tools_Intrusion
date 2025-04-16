@@ -1,0 +1,19 @@
+URL: http://www.bancocn.com/
+Status: 200
+
+=== Cabeçalhos HTTP ===
+Date: Wed, 16 Apr 2025 12:09:53 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+X-Powered-By: PHP/5.6.40-29+ubuntu18.04.1+deb.sury.org+1
+Vary: Accept-Encoding
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=f7dj4XcKXTZNSaa83C1DayT1YXIyWr0JCL6NwGSR9eb51zUcy%2F08TK1IuXn5AF4x8O1%2BTOHc5x%2FQGRaJWfPlUoJiHcEF%2FfVTg%2Fmi62Bqe%2B1XJIDFHXAMNi1rtwiUaHSreKDqv3KFLr41JBG5ZoY%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 9313938d5f40a52f-GRU
+Content-Encoding: gzip
+server-timing: cfL4;desc="?proto=TCP&rtt=31348&min_rtt=31348&rtt_var=15674&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=234&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+
+=== Cookies ===
