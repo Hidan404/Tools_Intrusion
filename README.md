@@ -52,7 +52,7 @@ Antes de começar, certifique-se de ter os seguintes itens instalados:
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/tools-intrusion.git
+    git clone https://github.com/Hidan404/Tools_Intrusion.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
@@ -107,8 +107,8 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 ## 📬 Contato
 
 - **Autor**: Hidan
-- **Email**: [seu-email@example.com](mailto:seu-email@example.com)
-- **GitHub**: [seu-usuario](https://github.com/seu-usuario)
+- **Email**: [seu-email@example.com](mailto:ronaldkurouzo@gmail.com)
+- **GitHub**: [seu-usuario](https://github.com/Hidan404)
 
 ---
 
