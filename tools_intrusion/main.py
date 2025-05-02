@@ -29,7 +29,7 @@ def menu():
             if opcao == 1:
                 console.print("[bold green]Coletar informações de domínio selecionado.[/bold green]")
                 dominio = info_coletor.entrada_dominio()
-                info_coletor.coletar_informacoes_dominio(dominio) 
+                info_coletor.coletar_informacoes_dominio(dominio)
                 menu()
             elif opcao == 2:
                 console.print("[bold green]Scanner de portas selecionado.[/bold green]")
@@ -40,11 +40,11 @@ def menu():
                 forca_bruta_diretorios.main()
                 menu()
             elif opcao == 4:
-                console.print("[bold red]conferindo  http cabeçalho[/bold red]")
+                console.print("[bold green]Conferir cabeçalho HTTP selecionado.[/bold green]")
                 http_cabecalho.main()
                 menu()
             elif opcao == 5:
-                console.print("[bold green]Força bruta de Diretórios selecionado.[/bold green]")
+                console.print("[bold green]Força bruta de login selecionado.[/bold green]")
                 bruteforce_login.main()
                 menu()
             elif opcao == 6:
